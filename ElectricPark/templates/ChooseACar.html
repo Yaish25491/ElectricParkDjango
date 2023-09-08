@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Select Your Car</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Select</button>
+    </form>
+    <br/>
+    <a class="btn btn-primary" href="{% url 'Create A Charging Station' %}">Continue To creat your Charging Station</a>
+
+{% endblock %}

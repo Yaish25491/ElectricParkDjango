@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Park</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    form {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    h1 {
+      margin: 0;
+    }
+    p {
+      font-size: 18px;
+      margin: 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Electric Park</h1>
+    <ul>
+      <img src="ElectricPark/media/my_image.jpeg" alt="Logo">
+     </ul> 
+    <ul>
+      <a class="button" href="{% url 'login' %}">Login</a>
+      <br/>
+      <br/>
+      <a class="button" href="{% url 'register' %}">Register</a>
+    </ul>  
+    <p>Welcome to Electric Park! Login to find charging station and more</p>
+  </header>
+  <nav>
+   
+   
+  </nav>
+  <main>
+    
+  </main>
+</body>
+</html>
+{% endblock %}

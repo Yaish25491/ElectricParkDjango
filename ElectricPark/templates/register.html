@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #333;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    h1 {
+      margin: 0;
+      color: #fff;
+    }
+    p {
+      font-size: 18px;
+      margin: 20px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .input-group {
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .input-group input {
+        width: 300px;
+        padding: 10px;
+        border: 5px solid #ccc;
+            border-radius: 15px;
+            
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Electric Park</h1>
+    <img src='/Users/hyaish/Downloads/logo/my_image.jpeg' alt alt="A beautiful landscape" width="300" height="200" style="border: 1px solid black;">
+  </header>
+  <h1>Register To Electric Park</h1>
+  <div class="input-group">
+    <form method="post" action="">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <br/>
+      <button class="button" type="submit">Register and continue to Select Your Car!</button>
+    </form>
+  <nav>  
+    <a class="button" href="http://127.0.0.1:8000/index/#">Back Home</a>
+  </nav>
+  <main>
+    <p>Here users can register to our service</p>
+  </main>
+</body>
+</html>
